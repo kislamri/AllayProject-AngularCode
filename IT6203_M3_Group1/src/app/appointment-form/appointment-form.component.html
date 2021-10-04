@@ -1,0 +1,32 @@
+<div class="container">
+    <h3>{{mode}}Appointment Form</h3>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+        <label>
+            Find Location
+            <input type="text" id="findLocation"
+             [(ngModel)]="findLocation" name="findLocation" >
+        </label>
+    
+        <label>
+            Plan Visit Day/Time
+            <input type="text" id="planVisit" 
+            [(ngModel)]="planVisit" name="planVisit" >
+        </label>
+
+        <label>
+            Find Doctor
+                 <input type="text" id="findDoctor" 
+                 [(ngModel)]="findDoctor" name="findDoctor" > 
+        </label>
+
+        <label>
+            Insurance
+                 <input type="text" id="insured" 
+                 [(ngModel)]="insured" name="insured" >
+            
+             </label>
+
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+    </form>

@@ -1,0 +1,48 @@
+<p>sickness-form works!</p>
+<div>
+    <h3>{{mode}} Sickness Form</h3>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+        <mat-form-field >
+            <input matInput placeholder="Enter First Name"  id="firstName" [(ngModel)]="firstName" name="firstName">
+        </mat-form-field>
+    <br>
+        <mat-form-field >
+            <input matInput placeholder="Enter Last Name" id="lastName" [(ngModel)]="lastName" name="lastName" >
+        </mat-form-field>
+     <br>
+        <mat-form-field >
+          <input matInput placeholder="Enter Email Id" id="emailId" [(ngModel)]="emailId" name="emailId" >
+        </mat-form-field>
+        <br>
+        <mat-form-field >
+          <input matInput placeholder="Enter Phone Number" id="phoneNumber" [(ngModel)]="phoneNumber" name="phoneNumber" >
+        </mat-form-field>
+        <br>
+        <mat-form-field >
+          <input matInput placeholder="Enter Patient Type(New/Existing)" id="patientType" [(ngModel)]="patientType" name="patientType" >
+        </mat-form-field>
+        <br>
+        <mat-form-field >
+          <input type="date" matInput placeholder="Enter Date Of Birth" id="dateOfBirth" [(ngModel)]="dateOfBirth" name="dateOfBirth" >
+        </mat-form-field>
+        <br>
+        <mat-form-field >
+          <input matInput placeholder="Enter Symptoms " id="symptoms1" [(ngModel)]="symptoms1" name="symptoms1" >
+        </mat-form-field>
+        <br>
+        <mat-form-field >
+          <input matInput placeholder="Enter Symptoms "  id="symptoms2" [(ngModel)]="symptoms2" name="symptoms2" >
+        </mat-form-field>
+        <br>
+        <mat-form-field >
+          <input matInput placeholder="Enter Symptoms "  id="symptoms3" [(ngModel)]="symptoms3" name="symptoms3" >
+        </mat-form-field>
+        <br>
+        <mat-form-field >
+          <input matInput placeholder="Enter Diseases " id="diseases" [(ngModel)]="diseases" name="diseases" >
+        </mat-form-field>
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+    </form>
+    </div>

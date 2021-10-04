@@ -1,0 +1,17 @@
+<p>list-appointments works!</p>
+<div>
+    <ul *ngFor ="let appointment of appointment let i = index">
+        <li> {{appointment._id}}: 
+            {{appointment.findLocation}}
+            {{appointment.planVisit}} 
+            {{appointment.findDoctor}} 
+            {{appointment.insured}}
+            (index {{i}})</li>
+            
+            <button mat-button color="warn" (click)="onDelete(appointment._id)"
+            mat-raised-button color="warn">DELETE</button>
+            <button mat-button color="accent" [routerLink]="['/editAppointment', appointment._id]" 
+            mat-raised-button color="primary">UPDATE</button>
+    </ul>
+   
+</div>

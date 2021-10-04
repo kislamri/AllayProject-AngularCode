@@ -1,0 +1,65 @@
+<div class="container">
+    <h2>{{mode}} New Patient Registration Form</h2>
+<form (ngSubmit)= "onSubmit()" #myForm = "ngForm">
+
+    <label>
+        
+        First Name
+        <input type="text" id="fristName"  [(ngModel)]="firstName" name = "firstName">
+    </label>
+
+    <label>
+        Last Name
+        <input type="text" id="lastName"  [(ngModel)]="lastName" name = "lastName">
+    </label>
+   
+    <label>
+        Date of Birth
+        <input type="Date" id="dob"  [(ngModel)]="dob" name = "dob">
+    </label>
+    <label>
+        Phone
+        <input type="text" id="phone"  [(ngModel)]="phone" name = "phone">
+    </label>
+    <label>
+        Patient type
+        <input type="text" id="patientType"  [(ngModel)]="patientType"  name = "patientType">
+    </label>
+    <label>
+        Gender
+        <input type="text" id="gender"  [(ngModel)]="gender" name = "gender">
+    </label>
+    <label>
+        Reason of Visit
+        <input type="text" id="reasonOfVisit"  [(ngModel)]="reasonOfVisit" name = "reasonOfVisit">
+    </label>
+<!-- 
+    <h2>Patient Address</h2>
+    <label>
+        Street
+        <input type="text" id="street"  [(ngModel)]="street" name = "street">
+    </label>
+    <label>
+        City
+        <input type="text" id="cityName"  [(ngModel)]="cityName" name = "cityName">
+    </label>
+    <label>
+        State
+        <input type="text" id="state"  [(ngModel)]="state" name = "state">
+    </label>
+    <label>
+        Zip
+        <input type="text"  id="zip" 
+            [(ngModel)]="zip" 
+            (keyup.enter)="getcityNameByZip(bindedTwoWays)"
+            name="zip">
+    </label -->
+
+    <p>
+        <button type="submit" mat-raised-button color="primary">Submit</button>
+    </p>
+    
+</form>
+    
+</div>
+

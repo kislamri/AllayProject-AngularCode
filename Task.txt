@@ -1,0 +1,36 @@
+Task1: Covert Array to ArrayList
+
+Array: Array is a containter objects that hold a fixed number of value in single type
+ArrayList: Used to store dynamically size collect of elements or objects
+Difference: Array--> Fixed size data structure, contain both primitive data type hence
+	    ArrayList--> dynamically size arrays that implement List interface.only supprot object entry not primitive but 
+convert primitive data type into Interger object
+
+1. Convert Array to ArrayList by using Arrays.asList()method
+2. Convert Array to ArrayList by Collections.addAll()method
+3. Convert Array to ArrayList by for looping manually
+
+Task 2: Convert ArrayList to Array
+1st method: toArray() declare array in null then method: itemArray = item.toArray(new String[item.size()]);
+2nd : Manually by for looping
+
+
+/* 
+
+  We have a class that models navigation items for our client websites.
+
+  There is a root level item which is not displayed, but contains a list of child items.
+
+  These child items may have child items, which may also have child items, to an arbitrary level of depth.
+
+  Write a method in C# or Java that takes in the root level NavigationItem and prints out the navigation structure
+  in a format that a non-developer could understand and use to help them troubleshoot issues with a site. 
+
+  You can assume that all Lists of children are non-null and have length of zero when they are empty.
+
+*/
+
+public class NavigationItem {
+    public string Url;
+    public string Label;
+    public List<NavigationItem> Children;

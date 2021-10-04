@@ -1,0 +1,23 @@
+<div>
+    <ul *ngFor ="let patient of patient let i = index">
+        <li> {{patient._id}}: 
+          {{patient.firstName}}
+           {{patient.lastName}} 
+           {{patient.dob}} 
+           {{patient.phone}}
+           {{patient.patientType}}  
+           {{patient.gender}} 
+           {{patient.reasonOfVisit}} 
+          <!--  {{patient.street}} 
+           {{patient.cityName}} 
+           {{patient.State}} 
+           {{patient.zip}} --> 
+           (index {{i}})</li>
+
+           <button mat-button color="warn" (click)="onDelete(patient._id)"
+           mat-raised-button color="warn">DELETE</button>
+           <button mat-button color="accent" [routerLink]="['/editPatient', patient._id]" 
+           mat-raised-button color="primary">UPDATE</button>
+    </ul>
+
+</div>

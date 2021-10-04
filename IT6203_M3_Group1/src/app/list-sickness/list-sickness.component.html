@@ -1,0 +1,22 @@
+<p>list-sickness works!</p>
+<div>
+    <ul *ngFor ="let sickness of sickness let i = index">
+        <li>  {{sickness._id}}:
+            {{sickness.firstName}}
+            {{sickness.lastName}} 
+            {{sickness.EmailId}} 
+            {{sickness.phoneNumber}} 
+           {{sickness.patientType}}
+            {{sickness.dateOfBirth}} 
+            {{sickness.symptoms1}} 
+            {{sickness.symptoms2}}
+            {{sickness.symptoms3}}
+             {{sickness.diseases}}
+             (index {{i}})
+       </li>
+        <button mat-button color="warn" (click)="onDelete(sickness._id)"
+        mat-raised-button color="warn">DELETE</button>
+        <button mat-button color="accent" [routerLink]="['/editSickness', sickness._id]" 
+        mat-raised-button color="primary">UPDATE</button>
+    </ul>
+</div>

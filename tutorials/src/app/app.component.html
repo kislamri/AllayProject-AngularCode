@@ -1,0 +1,26 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+   
+    <ul class="navbar-nav">
+      <li class="navbar-nav nav-item">
+        <a routerLink = "tutorials" routerLinkActive="active" class="navbar-brand">Tutorials</a>
+      </li>
+      <li class="navbar-nav nav-item">
+        <a routerLink = "add" routerLinkActive="active" class="navbar-brand">Add</a>
+      </li>
+         </ul>
+  
+  </nav>
+  </div>
+  
+  <h1 class="text-center">{{title}}</h1>
+  <div class="container">
+    <router-outlet></router-outlet>
+    
+  </div>
+  <footer class="container big-light text-center tex-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0,0,0, 0.2);">
+      © 2021 Copyright:
+      <span>All Rights Resever 2021 @ Allay Pharmaceuticals LLC</span>
+    </div>
+  </footer>

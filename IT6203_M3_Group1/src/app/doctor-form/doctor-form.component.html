@@ -1,0 +1,39 @@
+<p>doctor-form works!</p>
+<div class="container">
+    <h3>{{mode}}Doctor Form</h3>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+        <label>
+            Doctor Name
+            <input type="text" id="name"
+             [(ngModel)]="name" name="name" >
+        </label>
+    
+        <label>
+            Specialities
+            <input type="text" id="specialities" 
+            [(ngModel)]="specialities" name="specialities" >
+        </label>
+
+        <label>
+            Location
+                 <input type="text" id="location" 
+                 [(ngModel)]="location" name="location" > 
+        </label>
+
+        <label>
+            Phone Number
+                 <input type="text" id="phoneNumber" 
+                 [(ngModel)]="phoneNumber" name="phoneNumber" >
+            
+             </label>
+         <label>
+            Visiting Hours
+                 <input type="text" id="visitingHours" 
+                 [(ngModel)]="visitingHours" name="visitingHours" >
+            
+             </label>
+
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+    </form>
